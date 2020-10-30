@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "pravjpr/mybusybox"
+    registry = "gahlyananil/mybusybox"
     registryCredential = 'dockerhub'
     dockerImage = ''
   }
@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/git-praveen/jenkins-docker-example.git'
+        git 'https://github.com/gahlyananil/jenkins-docker-example.git'
       }
     }
     stage('Building image') {
